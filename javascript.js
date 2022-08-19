@@ -47,9 +47,7 @@ window.addEventListener("load", function () {
     list_el.appendChild(tr_el);
 
     input.value = "";
-    if (input.value == "") {
-      alert("Digite sua tarefa");
-    }
+
     btn_edit_el.addEventListener("click", (e) => {
       if (btn_edit_el.innerText.toLowerCase() == "edit") {
         btn_edit_el.classList = "save";
