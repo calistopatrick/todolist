@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+.bg {
+  background: #c1ecb6;
+}
+.title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  background: #99e486;
+}
+.tableRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#new-task-submit {
+  background: #8deaf7;
+  border-radius: 3px;
+}
+#new-task-submit:hover {
+  background: #54a6b1;
+}
+/*Container*/
+.container {
+  padding: 50px;
+  text-align: center;
+}
+/*Task*/
+
+/*Input*/
+input {
+  font-family: inherit;
+  font-weight: 400;
+  padding: 8px 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.text {
+  font-size: 20px;
+}
+/*Buttons*/
+button {
+  font-family: inherit;
+}
+.delete {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 10px 10px;
+}
+
+.delete::after {
+  content: "";
+  background-color: #ec6c55;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: 5px;
+}
+
+.delete:hover {
+  color: white;
+  background-color: #e03e22;
+}
+.delete:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Delete Button */
+.edit {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 10px;
+}
+
+.edit::after {
+  content: "";
+  background-color: #dcbaff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: 5px;
+}
+.edit:hover::after {
+  top: 0px;
+  left: 0px;
+}
+.edit:hover {
+  color: white;
+  background-color: #8319ee;
+}
+/* End of Edit Button */
+.save {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 10px;
+}
+
+.save::after {
+  content: "";
+  background-color: #6efaa4;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: 5px;
+}
+
+.save:hover::after {
+  top: 0px;
+  left: 0px;
+}
+.save:hover {
+  color: white;
+  background-color: #4dc031;
+}
+/* End of Save Button */
+/*Read Button */
+.read {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 10px;
+}
+
+.read::after {
+  content: "";
+  background-color: #6674f1;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: 5px;
+}
+.read:hover::after {
+  top: 0px;
+  left: 0px;
+}
+.read:hover {
+  color: white;
+  background-color: #2d17f1;
+}
+/*Read button*/
+
+.unread {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 10px;
+}
+
+.unread::after {
+  content: "";
+  background-color: #6674f1;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: 5px;
+}
+.unread:hover::after {
+  top: 0px;
+  left: 0px;
+}
+.unread:hover {
+  color: white;
+  background-color: #2d17f1;
+}
+/* End of Edit Button */
