@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
       if (btn_edit_el.innerText.toLowerCase() == "edit") {
         btn_edit_el.classList = "save";
         btn_edit_el.innerText = "Save";
-        table_input_el.setAttribute("style", "color: #8E2323");
+        table_input_el.setAttribute("style", "color: #f00");
         table_input_el.removeAttribute("readonly");
         table_input_el.focus();
       } else {
