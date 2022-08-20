@@ -1,0 +1,42 @@
+@media screen and (max-width: 600px) {
+  #tasks {
+    justify-content: center;
+    text-align: center;
+  }
+  .tableRow {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    display: block;
+    text-align: center;
+  }
+}
+.edit {
+  background: #dcbaff;
+  font-size: 12px;
+  font-weight: 800px;
+}
+
+.delete {
+  background: #ec6c55;
+  color: aliceblue;
+  font-size: 12px;
+  font-weight: 800px;
+}
+
+.save {
+  background: #6efaa4;
+}
+.read {
+  background: #6674f1;
+  color: aliceblue;
+  font-size: 12px;
+  font-weight: 800px;
+}
+
+.unread {
+  background: #6674f1;
+  color: aliceblue;
+  font-size: 12px;
+  font-weight: 800px;
+}
