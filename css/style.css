@@ -25,7 +25,9 @@
   border-radius: 3px;
 }
 #new-task-submit:hover {
-  background: #54a6b1;
+  background: #39767e;
+  border: #fff;
+  color: #fff;
 }
 /*Container*/
 .container {
