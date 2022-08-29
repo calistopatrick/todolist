@@ -11,31 +11,23 @@
     text-align: center;
   }
   .edit {
-    background: #dcbaff;
     font-size: 12px;
     font-weight: 800px;
     color: #000;
   }
 
   .delete {
-    background: #ec6c55;
-    color: aliceblue;
     font-size: 12px;
     font-weight: 800px;
   }
 
   .save {
-    background: #6efaa4;
   }
   .read {
-    background: #6674f1;
-    color: aliceblue;
     font-size: 12px;
     font-weight: 800px;
   }
   .unread {
-    background: #6674f1;
-    color: aliceblue;
     font-size: 12px;
     font-weight: 800px;
   }

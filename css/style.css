@@ -1,221 +1,71 @@
 * {
   margin: 0;
   padding: 0;
-  box-shadow: none;
 }
-.bg {
-  background: #c1ecb6;
+body {
+  background: #e3e9ff;
 }
-.title {
+/*Header*/
+/*title*/
+.title-todo {
+  font-family: "Oswald", sans-serif;
+  margin: 0 auto;
+  background: #af7eeb;
+  max-width: 500px;
+  height: 60px;
+}
+.title-todo-text {
+  padding: 10px;
+  margin-top: 5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
   text-align: center;
-
-  font-size: 2rem;
-  background: #99e486;
-}
-.tableRow {
   justify-content: center;
-  align-items: center;
-  margin: 10px;
-  display: flex;
+  font-weight: 800px;
+}
+/*title*/
+/*Form*/
+#new-task-form {
+  margin: 20px auto 10px auto;
+  justify-content: center;
+  text-align: center;
+}
+#new-task-input {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  width: 500px;
+  height: 40px;
+}
+#new-task-input::placeholder {
+  color: #9fa6c2;
+}
+#new-task-input:focus {
+  outline: 0;
+}
+
+/*Form*/
+/*Button*/
+
+.submit-button {
   text-align: center;
 }
 #new-task-submit {
-  color: #e2e2e2;
-  background: #070506;
-  border-radius: 3px;
-}
-#new-task-submit:hover {
-  background: #39767e;
-  border: #fff;
-  color: #fff;
-}
-/*Container*/
-.container {
-  padding: 50px;
-  text-align: center;
-}
-/*Task*/
-#tasks {
-  justify-content: center;
-  text-align: center;
-}
-/*Input*/
-input {
-  font-family: inherit;
-  font-weight: 400;
-  padding: 8px 20px;
-  outline: 0;
-  border: 1px solid black;
+  margin-top: 8px;
+  font-family: "Oswald", sans-serif;
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-}
-.text {
-  font-size: 20px;
-}
-/*Buttons*/
-button {
-  font-family: inherit;
-}
-.delete {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 8px 20px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  background: #af7eeb;
+  color: #ffffff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
 }
 
-.delete::after {
-  content: "";
-  background-color: #ec6c55;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 3px;
-  left: 5px;
-}
-
-.delete:hover {
-  color: white;
-  background-color: #e03e22;
-}
-.delete:hover::after {
-  top: 0px;
-  left: 0px;
-}
-/* End of Delete Button */
-.edit {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 8px 20px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0 10px;
-}
-
-.edit::after {
-  content: "";
-  background-color: #dcbaff;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 3px;
-  left: 5px;
-}
-.edit:hover::after {
-  top: 0px;
-  left: 0px;
-}
-.edit:hover {
-  color: white;
-  background-color: #8319ee;
-}
-/* End of Edit Button */
-.save {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 8px 20px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0 10px;
-}
-
-.save::after {
-  content: "";
-  background-color: #6efaa4;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 3px;
-  left: 5px;
-}
-
-.save:hover::after {
-  top: 0px;
-  left: 0px;
-}
-.save:hover {
-  color: white;
-  background-color: #4dc031;
-}
-/* End of Save Button */
-/*Read Button */
-.read {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 8px 20px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0 10px;
-}
-
-.read::after {
-  content: "";
-  background-color: #6674f1;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 3px;
-  left: 5px;
-}
-.read:hover::after {
-  top: 0px;
-  left: 0px;
-}
-.read:hover {
-  color: white;
-  background-color: #2d17f1;
-}
-/*Read button*/
-
-.unread {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 8px 20px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0 10px;
-}
-
-.unread::after {
-  content: "";
-  background-color: #6674f1;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 3px;
-  left: 5px;
-}
-.unread:hover::after {
-  top: 0px;
-  left: 0px;
-}
-.unread:hover {
-  color: white;
-  background-color: #2d17f1;
-}
-/* End of Edit Button */
+/*Button*/
+/*Header*/
