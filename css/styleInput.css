@@ -12,8 +12,10 @@
 .background-tasks {
   background: white;
 }
-.tableColumm1 .text {
+.corMarca {
   color: #9fa6c2;
+}
+.tableColumm1 .text {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   text-align: center;
@@ -23,7 +25,6 @@
 }
 .input-tableColumm1,
 .text {
-  color: #9fa6c2;
   font-family: "Oswald", sans-serif;
   font-size: 2rem;
   text-align: center;

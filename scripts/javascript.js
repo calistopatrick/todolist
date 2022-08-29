@@ -59,7 +59,7 @@ window.addEventListener("load", function () {
         } else {
           btn_edit_el.innerText = "📝";
           table_input_el.setAttribute("readonly", "readonly");
-          table_input_el.removeAttribute("style", "color: #8E2323");
+          table_input_el.removeAttribute("style", "color: #f00");
           btn_edit_el.classList.remove("save");
           btn_edit_el.classList.add("edit");
         }
@@ -70,13 +70,17 @@ window.addEventListener("load", function () {
       });
       btn_read_el.addEventListener("click", (e) => {
         if (btn_read_el.innerText.toLowerCase() == "⚪") {
+          table_input_el.classList.add("corMarca");
           btn_read_el.classList = "unread";
           btn_read_el.innerText = "🟢";
+
           table_input_el.setAttribute("style", "text-decoration:line-through");
         } else {
           btn_read_el.innerText = "⚪";
+          table_input_el.classList.remove("corMarca");
           btn_read_el.classList.remove("unread");
           btn_read_el.classList.add("read");
+
           table_input_el.removeAttribute(
             "style",
             "text-decoration:line-through"
