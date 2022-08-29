@@ -9,8 +9,6 @@ window.addEventListener("load", function () {
     const recebe = input.value;
 
     if (recebe !== "") {
-      alert("Sucess");
-
       const tr_el = document.createElement("div");
       tr_el.classList.add("tableRow");
 
