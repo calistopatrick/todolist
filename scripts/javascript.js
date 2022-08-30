@@ -29,15 +29,15 @@ window.addEventListener("load", function () {
 
       const btn_edit_el = document.createElement("button");
       btn_edit_el.classList.add("edit");
-      btn_edit_el.innerText = "📝";
+      btn_edit_el.innerHTML = `<img src="./img/pencil-square.svg">`;
 
       const btn_delete_el = document.createElement("button");
       btn_delete_el.classList.add("delete");
-      btn_delete_el.innerText = "❌";
+      btn_delete_el.innerHTML = `<img src="./img/trash.svg">`;
 
       const btn_read_el = document.createElement("button");
       btn_read_el.classList.add("read");
-      btn_read_el.innerText = "⚪";
+      btn_read_el.innerHTML = `<img src="./img/clipboard2.svg">`;
 
       btn_actions_el.appendChild(btn_read_el);
       btn_actions_el.appendChild(btn_edit_el);
@@ -48,14 +48,17 @@ window.addEventListener("load", function () {
       input.value = "";
 
       btn_edit_el.addEventListener("click", (e) => {
-        if (btn_edit_el.innerText.toLowerCase() == "📝") {
+        if (
+          btn_edit_el.innerHTML.toLowerCase() ==
+          `<img src="./img/pencil-square.svg">`
+        ) {
           btn_edit_el.classList = "save";
-          btn_edit_el.innerText = "💾";
+          btn_edit_el.innerHTML = `<img src="./img/arrow-repeat.svg">`;
           table_input_el.setAttribute("style", "color: #f00");
           table_input_el.removeAttribute("readonly");
           table_input_el.focus();
         } else {
-          btn_edit_el.innerText = "📝";
+          btn_edit_el.innerHTML = `<img src="./img/pencil-square.svg">`;
           table_input_el.setAttribute("readonly", "readonly");
           table_input_el.removeAttribute("style", "color: #f00");
           btn_edit_el.classList.remove("save");
@@ -69,14 +72,17 @@ window.addEventListener("load", function () {
         ativarD(msgD);
       });
       btn_read_el.addEventListener("click", (e) => {
-        if (btn_read_el.innerText.toLowerCase() == "⚪") {
+        if (
+          btn_read_el.innerHTML.toLowerCase() ==
+          `<img src="./img/clipboard2.svg">`
+        ) {
           table_input_el.classList.add("corMarca");
           btn_read_el.classList = "unread";
-          btn_read_el.innerText = "🟢";
+          btn_read_el.innerHTML = `<img src="./img/clipboard2-check.svg">`;
 
           table_input_el.setAttribute("style", "text-decoration:line-through");
         } else {
-          btn_read_el.innerText = "⚪";
+          btn_read_el.innerHTML = `<img src="./img/clipboard2.svg">`;
           table_input_el.classList.remove("corMarca");
           btn_read_el.classList.remove("unread");
           btn_read_el.classList.add("read");

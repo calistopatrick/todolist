@@ -1,6 +1,7 @@
 const divMessage = document.querySelector(".alert");
 const submit = document.querySelector("#new-task-submit");
 const input = document.querySelector("#new-task-input");
+
 const recebe = input.value;
 const msg = "Sucesso !";
 const msgD = "Task deletada !";
