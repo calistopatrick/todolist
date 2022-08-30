@@ -5,9 +5,8 @@ window.addEventListener("load", function () {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
     const recebe = input.value;
-
+    //alert.setAttribute("style", "display: inline-block");
     if (recebe !== "") {
       const tr_el = document.createElement("div");
       tr_el.classList.add("tableRow");
@@ -54,7 +53,6 @@ window.addEventListener("load", function () {
           btn_edit_el.innerText = "💾";
           table_input_el.setAttribute("style", "color: #f00");
           table_input_el.removeAttribute("readonly");
-
           table_input_el.focus();
         } else {
           btn_edit_el.innerText = "📝";
@@ -62,11 +60,13 @@ window.addEventListener("load", function () {
           table_input_el.removeAttribute("style", "color: #f00");
           btn_edit_el.classList.remove("save");
           btn_edit_el.classList.add("edit");
+          ativarSave(msgSave);
         }
       });
 
       btn_delete_el.addEventListener("click", (e) => {
         list_el.removeChild(tr_el);
+        ativarD(msgD);
       });
       btn_read_el.addEventListener("click", (e) => {
         if (btn_read_el.innerText.toLowerCase() == "⚪") {
@@ -80,7 +80,6 @@ window.addEventListener("load", function () {
           table_input_el.classList.remove("corMarca");
           btn_read_el.classList.remove("unread");
           btn_read_el.classList.add("read");
-
           table_input_el.removeAttribute(
             "style",
             "text-decoration:line-through"
@@ -88,7 +87,7 @@ window.addEventListener("load", function () {
         }
       });
     } else {
-      alert("Campo task está em branco");
+      ativarNull(msgNull);
     }
   });
 });
