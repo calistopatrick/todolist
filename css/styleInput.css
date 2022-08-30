@@ -11,6 +11,7 @@
 }
 .background-tasks {
   background: white;
+  border-radius: 5px;
 }
 .corMarca {
   color: #9fa6c2;
