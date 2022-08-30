@@ -43,6 +43,7 @@ btn_delete_el.addEventListener("click", () => {
 function ativarSave(msgSave) {
   const message = document.createElement("div");
   message.classList.add("messageSave");
+  message.setAttribute("style", "color: #fff");
   message.innerText = msgSave;
   divMessage.appendChild(message);
 
