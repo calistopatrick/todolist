@@ -46,20 +46,21 @@
 button {
   font-family: inherit;
 }
+.action {
+}
 .delete {
   background: #ffffff;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 10px 10px;
   outline: 0;
   border: none;
   cursor: pointer;
-  margin: auto 3px;
 }
 /* End of Delete Button */
 .edit {
   background: #ffffff;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 10px 10px;
   outline: 0;
   border: none;
   cursor: pointer;
@@ -69,7 +70,7 @@ button {
 .save {
   background: #ffffff;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 10px 10px;
   outline: 0;
   border: none;
   cursor: pointer;
@@ -80,7 +81,7 @@ button {
 .read {
   background: #ffffff;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 10px 10px;
   outline: 0;
   border: none;
   cursor: pointer;
@@ -90,7 +91,24 @@ button {
 .unread {
   background: #ffffff;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  margin: auto 3px;
+}
+.star {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+.starFill {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
   outline: 0;
   border: none;
   cursor: pointer;

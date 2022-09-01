@@ -9,6 +9,7 @@ window.addEventListener("load", function () {
     //alert.setAttribute("style", "display: inline-block");
     if (recebe !== "") {
       const tr_el = document.createElement("div");
+
       tr_el.classList.add("tableRow");
 
       const td_content_el = document.createElement("div");
@@ -27,6 +28,10 @@ window.addEventListener("load", function () {
       const btn_actions_el = document.createElement("div");
       btn_actions_el.classList.add("actions");
 
+      const btn_star_el = document.createElement("button");
+      btn_star_el.classList.add("star");
+      btn_star_el.innerHTML = `<img src="./img/star.svg">`;
+
       const btn_edit_el = document.createElement("button");
       btn_edit_el.classList.add("edit");
       btn_edit_el.innerHTML = `<img src="./img/pencil-square.svg">`;
@@ -39,6 +44,7 @@ window.addEventListener("load", function () {
       btn_read_el.classList.add("read");
       btn_read_el.innerHTML = `<img src="./img/clipboard2.svg">`;
 
+      btn_actions_el.appendChild(btn_star_el);
       btn_actions_el.appendChild(btn_read_el);
       btn_actions_el.appendChild(btn_edit_el);
       btn_actions_el.appendChild(btn_delete_el);
@@ -90,6 +96,18 @@ window.addEventListener("load", function () {
             "style",
             "text-decoration:line-through"
           );
+        }
+      });
+      btn_star_el.addEventListener("click", (e) => {
+        if (
+          btn_star_el.innerHTML.toLowerCase() == `<img src="./img/star.svg">`
+        ) {
+          btn_star_el.classList = "starFill";
+          btn_star_el.innerHTML = `<img src="./img/star-fill.svg">`;
+        } else {
+          btn_star_el.innerHTML = `<img src="./img/star.svg">`;
+          btn_star_el.classList.remove("starFill");
+          btn_star_el.classList.add("star");
         }
       });
     } else {
