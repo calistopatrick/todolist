@@ -55,6 +55,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
+  width: 40px;
+  height: 20px;
 }
 /* End of Delete Button */
 .edit {
@@ -64,7 +66,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
-  margin: auto 3px;
+  width: 40px;
+  height: 20px;
 }
 /* End of Edit Button */
 .save {
@@ -74,7 +77,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
-  margin: auto 3px;
+  width: 40px;
+  height: 20px;
 }
 /* End of Save Button */
 /*Read Button */
@@ -85,7 +89,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
-  margin: auto 3px;
+  width: 40px;
+  height: 20px;
 }
 /*Read button*/
 .unread {
@@ -95,7 +100,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
-  margin: auto 3px;
+  width: 40px;
+  height: 20px;
 }
 .star {
   background: #ffffff;
@@ -104,6 +110,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
+  width: 40px;
+  height: 20px;
 }
 .starFill {
   background: #ffffff;
@@ -112,7 +120,8 @@ button {
   outline: 0;
   border: none;
   cursor: pointer;
-  margin: auto 3px;
+  width: 40px;
+  height: 20px;
 }
 .bi-trash {
   font-size: px;
