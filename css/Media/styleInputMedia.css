@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
   .tableRow {
     justify-content: center;
+    align-items: center;
     display: flex;
     margin: 15px auto;
   }
@@ -8,7 +9,7 @@
     margin: 10px auto;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 320px;
   }
   .background-tasks {
     background: white;
@@ -53,7 +54,7 @@
   .delete {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -64,7 +65,7 @@
   .edit {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -75,7 +76,7 @@
   .save {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -87,7 +88,7 @@
   .read {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -98,7 +99,7 @@
   .unread {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -108,7 +109,7 @@
   .star {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -118,7 +119,7 @@
   .starFill {
     background: #ffffff;
     font-size: 5px;
-    padding: 10px 3px;
+    padding: 8px 5px;
     outline: 0;
     border: none;
     cursor: pointer;
